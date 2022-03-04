@@ -3,7 +3,7 @@ package Softuniada2021;
 // operations required to transform one
 // string to other
 
-import java.util.*;
+import java.util.Scanner;
 
 public class TheGame {
 

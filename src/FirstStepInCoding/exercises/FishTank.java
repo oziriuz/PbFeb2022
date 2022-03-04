@@ -22,7 +22,7 @@ public class FishTank {
         heightCM = Integer.parseInt(scanner.nextLine());
         percent = Double.parseDouble(scanner.nextLine());
 
-        lengthDM = lengthCM  * 0.1;
+        lengthDM = lengthCM * 0.1;
         widthDM = widthCM * 0.1;
         heightDM = heightCM * 0.1;
 

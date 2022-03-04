@@ -17,10 +17,10 @@ public class SortedArray {
         }
 
         for (int i = 1; i < n; i++) {
-            if (listInt.get(i) >= listInt.get(i - 1) && i % 2 !=0) {
+            if (listInt.get(i) >= listInt.get(i - 1) && i % 2 != 0) {
                 Collections.swap(listInt, i, i - 1);
             }
-            if (listInt.get(i) <= listInt.get(i - 1) && i % 2 ==0) {
+            if (listInt.get(i) <= listInt.get(i - 1) && i % 2 == 0) {
                 Collections.swap(listInt, i, i - 1);
             }
         }

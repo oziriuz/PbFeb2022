@@ -15,7 +15,7 @@ public class TennisRanklist {
             String reach = scanner.nextLine();
 
             switch (reach) {
-                case "W" :
+                case "W":
                     points += 2000;
                     winnerTours++;
                     break;
@@ -30,7 +30,7 @@ public class TennisRanklist {
             }
         }
         System.out.printf("Final points: %d%n", points + startPoints);
-        System.out.printf("Average points: %.0f %n", Math.floor((double) points/numOfTours));
-        System.out.printf("%.2f%%", (double)winnerTours/numOfTours * 100);
+        System.out.printf("Average points: %.0f %n", Math.floor((double) points / numOfTours));
+        System.out.printf("%.2f%%", (double) winnerTours / numOfTours * 100);
     }
 }

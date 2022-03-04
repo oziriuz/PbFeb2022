@@ -14,7 +14,7 @@ public class TimePlus15Minutes {
         hours = sumMinutes / 60;
         minutes = sumMinutes % 60;
 
-        if (hours == 24){
+        if (hours == 24) {
             hours = 0;
         } else if (hours > 24) {
             hours -= 24;

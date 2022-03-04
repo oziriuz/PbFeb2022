@@ -14,7 +14,7 @@ public class WeatherForecastPart2 {
             System.out.println("Hot");
         else if (degrees >= 20.1 && degrees <= 25.9)
             System.out.println("Warm");
-        else if (degrees >= 15.00 && degrees <=20.00)
+        else if (degrees >= 15.00 && degrees <= 20.00)
             System.out.println("Mild");
         else if (degrees >= 12.00 && degrees <= 14.9)
             System.out.println("Cool");

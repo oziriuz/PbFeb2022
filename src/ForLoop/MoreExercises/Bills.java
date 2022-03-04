@@ -21,7 +21,7 @@ public class Bills {
             sumOther += other;
         }
 
-        double average = (sumElectricity + sumWater + sumInternet + sumOther)/months;
+        double average = (sumElectricity + sumWater + sumInternet + sumOther) / months;
 
         System.out.printf("Electricity: %.2f lv%n", sumElectricity);
         System.out.printf("Water: %.2f lv%n", sumWater);

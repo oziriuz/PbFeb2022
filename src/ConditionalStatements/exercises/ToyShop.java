@@ -19,9 +19,9 @@ public class ToyShop {
         int numMinions = Integer.parseInt(scanner.nextLine());
         int numTrucks = Integer.parseInt(scanner.nextLine());
 
-        double totalPrice = pricePuzzle*numPuzzles + priceDoll*numDolls + priceBear*numBears + priceMinion*numMinions + priceTruck*numTrucks;
+        double totalPrice = pricePuzzle * numPuzzles + priceDoll * numDolls + priceBear * numBears + priceMinion * numMinions + priceTruck * numTrucks;
 
-        int numOfToys = numPuzzles+numDolls+numBears+numMinions+numTrucks;
+        int numOfToys = numPuzzles + numDolls + numBears + numMinions + numTrucks;
 
         if (numOfToys >= 50) {
             totalPrice = totalPrice * 0.75;

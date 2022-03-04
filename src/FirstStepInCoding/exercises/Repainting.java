@@ -9,7 +9,7 @@ public class Repainting {
         final double PRICE_NYLON_SQM = 1.50;
         final double PRICE_PAINT_L = 14.50;
         final double PRICE_THINNER_L = 5.00;
-        final  double PRICE_BAGS = 0.40;
+        final double PRICE_BAGS = 0.40;
 
         int quantityNylon;
         double quantityPaint;

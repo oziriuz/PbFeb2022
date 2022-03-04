@@ -16,11 +16,11 @@ public class TrekkingMania {
 
         int sumPeople = 0;
 
-        double percentMusala = 0;
-        double percentMonblan = 0;
-        double percentKili = 0;
-        double percentK2 = 0;
-        double percentEverest = 0;
+        double percentMusala;
+        double percentMonblan;
+        double percentKili;
+        double percentK2;
+        double percentEverest;
 
         for (int i = 0; i < numOfGroups; i++) {
             int numOfPeople = Integer.parseInt(scanner.nextLine());

@@ -29,13 +29,13 @@ public class WeddingSeats {
             for (int j = 1; j <= rows; j++) {
                 rowsPrint = j;
                 if (rowsPrint % 2 != 0 || rows == 1)
-                    for (int k = 'a' ; k <= (int) 'a' + seatOfOddRows - 1; k++) {
+                    for (int k = 'a'; k <= (int) 'a' + seatOfOddRows - 1; k++) {
                         seatOfOddRowsAscii = (char) k;
                         System.out.printf("%c%d%c%n", sectorPrint, rowsPrint, seatOfOddRowsAscii);
                         seatCounter++;
                     }
                 else
-                    for (int l = 'a' ; l <= (int) 'a' + seatOfEvenRows - 1; l++) {
+                    for (int l = 'a'; l <= (int) 'a' + seatOfEvenRows - 1; l++) {
                         seatOfEvenRowsAscii = (char) l;
                         System.out.printf("%c%d%c%n", sectorPrint, rowsPrint, seatOfEvenRowsAscii);
                         seatCounter++;

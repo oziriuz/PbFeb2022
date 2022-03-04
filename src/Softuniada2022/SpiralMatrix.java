@@ -7,8 +7,7 @@ import java.util.Scanner;
 
 public class SpiralMatrix {
 
-    static void spiralPrint(int m, int n, int a[][])
-    {
+    static void spiralPrint(int m, int n, int[][] a) {
         int i;
         int k = 0;
         int l = 0;

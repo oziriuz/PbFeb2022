@@ -9,7 +9,7 @@ public class Salary {
         int tabs = Integer.parseInt(scanner.nextLine());
         int salary = Integer.parseInt(scanner.nextLine());
 
-        for (int i = 0; i < tabs; i++){
+        for (int i = 0; i < tabs; i++) {
             String siteName = scanner.nextLine();
 
             switch (siteName) {
@@ -25,7 +25,7 @@ public class Salary {
                 default:
                     break;
             }
-            if(salary <= 0) {
+            if (salary <= 0) {
                 System.out.println("You have lost your salary.");
                 return;
             }

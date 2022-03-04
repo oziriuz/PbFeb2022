@@ -8,7 +8,7 @@ public class NumberInRange {
 
         int number = Integer.parseInt(scanner.nextLine());
 
-        if (number != 0 && number <= 100 && number >= -100){
+        if (number != 0 && number <= 100 && number >= -100) {
             System.out.println("Yes");
         } else {
             System.out.println("No");

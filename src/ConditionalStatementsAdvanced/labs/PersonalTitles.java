@@ -1,6 +1,5 @@
 package ConditionalStatementsAdvanced.labs;
 
-import java.util.Objects;
 import java.util.Scanner;
 
 public class PersonalTitles {

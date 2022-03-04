@@ -4,50 +4,6 @@ import java.util.*;
 
 public class SnowboardingRecursion {
 
-    public static class Track {
-        String name;
-
-        public int getStamina() {
-            return stamina;
-        }
-
-        int stamina;
-        int points;
-
-        public Track(String name, int stamina, int points) {
-            this.name = name;
-            this.stamina = stamina;
-            this.points = points;
-        }
-
-        public int getPoints() {
-            return points;
-        }
-
-        public double getWorth() {
-            return (double) points/stamina;
-        }
-
-    }
-
-    public static class Player {
-        int staminaInitial;
-        int staminaLeft;
-        int points;
-
-        List<String> tracksPassed = new ArrayList<>();
-
-        public Player(int staminaInitial) {
-            this.staminaInitial = staminaInitial;
-            this.staminaLeft = staminaInitial;
-        }
-
-        public boolean canGoThisTrack(Track track) {
-            return this.staminaLeft >= track.stamina;
-        }
-
-    }
-
     public static int getTrackFromList(List<Track> trackList, int numberOfTracks, int staminaLeft, Player competitor, List<String> tracksPassed) {
         //base negative stamina
 
@@ -119,5 +75,47 @@ public class SnowboardingRecursion {
 //        System.out.println(competitor.points);
 //        System.out.println(competitor.staminaLeft);
         System.out.println(result);
+    }
+
+    public static class Track {
+        String name;
+        int stamina;
+        int points;
+        public Track(String name, int stamina, int points) {
+            this.name = name;
+            this.stamina = stamina;
+            this.points = points;
+        }
+
+        public int getStamina() {
+            return stamina;
+        }
+
+        public int getPoints() {
+            return points;
+        }
+
+        public double getWorth() {
+            return (double) points / stamina;
+        }
+
+    }
+
+    public static class Player {
+        int staminaInitial;
+        int staminaLeft;
+        int points;
+
+        List<String> tracksPassed = new ArrayList<>();
+
+        public Player(int staminaInitial) {
+            this.staminaInitial = staminaInitial;
+            this.staminaLeft = staminaInitial;
+        }
+
+        public boolean canGoThisTrack(Track track) {
+            return this.staminaLeft >= track.stamina;
+        }
+
     }
 }

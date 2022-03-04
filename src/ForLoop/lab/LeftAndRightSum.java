@@ -20,7 +20,7 @@ public class LeftAndRightSum {
             rightSum += number;
         }
 
-        if (leftSum == rightSum){
+        if (leftSum == rightSum) {
             System.out.println("Yes, sum = " + leftSum);
         } else {
             System.out.println("No, diff = " + Math.abs(leftSum - rightSum));

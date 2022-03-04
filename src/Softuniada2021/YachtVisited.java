@@ -18,7 +18,7 @@ public class YachtVisited {
         if (isOk) {
             return current;
         }
-        if(deadEnd.contains(key)) {
+        if (deadEnd.contains(key)) {
             return -1;
         }
         if (current < min || current > max) {

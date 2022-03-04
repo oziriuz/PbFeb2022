@@ -32,7 +32,7 @@ public class CarToGo {
             } else {
                 price = 0.80 * budget;
             }
-        }else {
+        } else {
             carClass = "Luxury class";
             price = 0.90 * budget;
         }

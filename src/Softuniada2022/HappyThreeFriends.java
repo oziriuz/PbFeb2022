@@ -4,8 +4,7 @@ import java.util.*;
 
 public class HappyThreeFriends {
     public static boolean subsetSum(int[] S, int n, int a, int b, int c,
-                                    Map<String, Boolean> lookup)
-    {
+                                    Map<String, Boolean> lookup) {
         // return true if the subset is found
         if (a == 0 && b == 0 && c == 0) {
             return true;
@@ -21,8 +20,7 @@ public class HappyThreeFriends {
 
         // if the subproblem is seen for the first time, solve it and
         // store its result in a map
-        if (!lookup.containsKey(key))
-        {
+        if (!lookup.containsKey(key)) {
             // Case 1. The current item becomes part of the first subset
             boolean A = false;
             if (a - S[n] >= 0) {
@@ -51,8 +49,7 @@ public class HappyThreeFriends {
 
     // Function for solving the 3–partition problem. It returns true if the given
     // set `S` can be divided into three subsets with an equal sum
-    public static boolean partition(int[] S)
-    {
+    public static boolean partition(int[] S) {
         if (S.length < 3) {
             return false;
         }
@@ -65,8 +62,8 @@ public class HappyThreeFriends {
 
         // return true if the sum is divisible by 3 and the set `S` can
         // be divided into three subsets with an equal sum
-        return (sum % 3) == 0 && subsetSum(S, S.length - 1, sum/3,
-                sum/3, sum/3, lookup);
+        return (sum % 3) == 0 && subsetSum(S, S.length - 1, sum / 3,
+                sum / 3, sum / 3, lookup);
     }
 
     public static void main(String[] args) {
@@ -86,8 +83,7 @@ public class HappyThreeFriends {
         for (int i = 0; i < rows; i++) {
             if (partition(matrix[i])) {
                 System.out.println("Yes");
-            }
-            else {
+            } else {
                 System.out.println("No");
             }
         }

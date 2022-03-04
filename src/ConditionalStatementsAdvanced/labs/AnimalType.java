@@ -10,12 +10,12 @@ public class AnimalType {
         String type;
 
         switch (animal) {
-            case "dog" :
+            case "dog":
                 type = "mammal";
                 break;
             case "crocodile":
-            case  "tortoise" :
-            case "snake" :
+            case "tortoise":
+            case "snake":
                 type = "reptile";
                 break;
             default:

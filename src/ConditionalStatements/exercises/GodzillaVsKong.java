@@ -21,7 +21,7 @@ public class GodzillaVsKong {
         double totalCost = priceAllClothes + priceDecorations;
 
         double rest = budget - totalCost;
-        if(rest < 0) {
+        if (rest < 0) {
             System.out.println("Not enough money!");
             System.out.printf("Wingard needs %.2f leva more.", Math.abs(rest));
         } else {

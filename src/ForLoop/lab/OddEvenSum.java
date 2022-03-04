@@ -18,7 +18,7 @@ public class OddEvenSum {
                 sumOdd += number;
             }
         }
-        if (sumEven == sumOdd){
+        if (sumEven == sumOdd) {
             System.out.println("Yes");
             System.out.println("Sum = " + sumEven);
         } else {

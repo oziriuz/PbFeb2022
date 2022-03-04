@@ -14,9 +14,10 @@ public class ProjectsCreation {
         architectName = scanner.nextLine();
         numberOfProjects = Integer.parseInt(scanner.nextLine());
         timeNeededForAllProjects = timeForOneProject * numberOfProjects;
-        if (numberOfProjects>=0 && numberOfProjects <= 100){
+        if (numberOfProjects >= 0 && numberOfProjects <= 100) {
             System.out.printf("The architect %s will need %d hours to complete %d project/s.", architectName, timeNeededForAllProjects, numberOfProjects);
+        } else {
+            System.out.println("Number of project is out of limits! Must be between 0 and 100!");
         }
-        else {System.out.println("Number of project is out of limits! Must be between 0 and 100!");}
     }
 }

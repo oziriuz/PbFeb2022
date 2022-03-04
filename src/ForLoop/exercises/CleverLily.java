@@ -17,7 +17,7 @@ public class CleverLily {
             numberOfToys++;
         }
         for (int i = 2; i <= agesLilly; i += 2) {
-            money += i/2 * 10 - 1;
+            money += i / 2 * 10 - 1;
         }
 
         money += priceToy * numberOfToys;

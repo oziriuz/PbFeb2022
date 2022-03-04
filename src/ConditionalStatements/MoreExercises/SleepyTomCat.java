@@ -17,7 +17,7 @@ public class SleepyTomCat {
         int diffHours = Math.abs(diff / 60);
         int diffMinutes = Math.abs(diff % 60);
 
-        if(playTime > 30_000){
+        if (playTime > 30_000) {
             System.out.println("Tom will run away");
             System.out.printf("%d hours and %d minutes more for play", diffHours, diffMinutes);
         } else {

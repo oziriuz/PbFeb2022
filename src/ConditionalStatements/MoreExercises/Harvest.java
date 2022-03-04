@@ -19,7 +19,7 @@ public class Harvest {
             System.out.printf("It will be a tough winter! More %.0f liters wine needed.", Math.floor(Math.abs(litresWineLeft)));
         } else {
             System.out.printf("Good harvest this year! Total wine: %.0f liters.%n", Math.floor(litresWineMade));
-            System.out.printf("%.0f liters left -> %.0f liters per person.", Math.ceil(litresWineLeft), Math.ceil(litresWineLeft/numOfWorkers));
+            System.out.printf("%.0f liters left -> %.0f liters per person.", Math.ceil(litresWineLeft), Math.ceil(litresWineLeft / numOfWorkers));
         }
     }
 }

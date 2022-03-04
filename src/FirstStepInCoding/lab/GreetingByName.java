@@ -7,6 +7,6 @@ public class GreetingByName {
         Scanner scanner = new Scanner(System.in);
         String name;
         name = scanner.nextLine();
-        System.out.println("Hello, "+ name +"!");
+        System.out.println("Hello, " + name + "!");
     }
 }

@@ -1,13 +1,10 @@
 package Softuniada2021;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
-import java.util.Scanner;
+import java.util.*;
 
 public class Yacht {
     public static boolean isOk = false;
+
     public static int stepBackward(int position, int maxPosition, int[] path, int min, int max, int target, int current) {
         if (current == target && position == maxPosition) {
             isOk = true;
@@ -62,7 +59,7 @@ public class Yacht {
             return;
         }
 
-        long cur= System.nanoTime();
+        long cur = System.nanoTime();
 
         for (int temp = upperLimit; temp >= lowerLimit; temp--) {
             result = stepBackward(0, numberOfPoints, grid, lowerLimit, upperLimit, initialSpeed, temp);
@@ -70,8 +67,8 @@ public class Yacht {
                 break;
             }
         }
-        long c1 = System.nanoTime()-cur;
-        System.out.println("TIME CONSUMED:" +c1);
+        long c1 = System.nanoTime() - cur;
+        System.out.println("TIME CONSUMED:" + c1);
         System.out.println(result);
     }
 }

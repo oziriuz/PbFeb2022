@@ -33,10 +33,10 @@ public class FuelTankPart2 {
             default:
                 break;
         }
-        if (fuelLitres >= 20 && fuelLitres <=25) {
-            cost = cost *0.92;
-        } else  if (fuelLitres > 25) {
-            cost = cost *.90;
+        if (fuelLitres >= 20 && fuelLitres <= 25) {
+            cost = cost * 0.92;
+        } else if (fuelLitres > 25) {
+            cost = cost * .90;
         }
         System.out.printf("%.2f lv.", cost);
     }

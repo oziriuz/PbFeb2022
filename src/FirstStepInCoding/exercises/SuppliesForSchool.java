@@ -29,7 +29,7 @@ public class SuppliesForSchool {
         priceMarkers = packsOfMarkers * MARKERS_PRICE;
         priceDetergent = litersOfDetergent * DETERGENT_PRICE;
         totalSum = pricePens + priceMarkers + priceDetergent;
-        totalSum = totalSum * (1 - discount/100);
+        totalSum = totalSum * (1 - discount / 100);
         System.out.println(totalSum);
 
     }

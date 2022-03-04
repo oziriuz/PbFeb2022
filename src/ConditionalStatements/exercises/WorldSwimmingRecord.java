@@ -11,7 +11,7 @@ public class WorldSwimmingRecord {
         double secondsForOneMeter = Double.parseDouble(scanner.nextLine());
 
         double secondsTotal = secondsForOneMeter * distanceWR;
-        double slow =  ((int)(distanceWR / 15) * 12.5);
+        double slow = ((int) (distanceWR / 15) * 12.5);
         secondsTotal += slow;
 
         double rest = secondsWR - secondsTotal;

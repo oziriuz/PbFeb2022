@@ -11,7 +11,7 @@ public class WorkingHours {
 
         if (hour >= 10 && hour <= 18) {
             switch (day) {
-                case "Monday" :
+                case "Monday":
                 case "Tuesday":
                 case "Wednesday":
                 case "Thursday":
@@ -19,7 +19,7 @@ public class WorkingHours {
                 case "Saturday":
                     System.out.println("open");
                     break;
-                case "Sunday" :
+                case "Sunday":
                     System.out.println("closed");
                     break;
                 default:

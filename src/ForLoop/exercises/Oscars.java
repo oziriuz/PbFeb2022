@@ -14,7 +14,7 @@ public class Oscars {
             String nameJury = scanner.nextLine();
             double pointsTemp = Double.parseDouble(scanner.nextLine());
 
-            points += nameJury.length()*pointsTemp/2;
+            points += nameJury.length() * pointsTemp / 2;
 
             if (points >= 1250.5) {
                 System.out.printf("Congratulations, %s got a nominee for leading role with %.1f!", nameActor, points);

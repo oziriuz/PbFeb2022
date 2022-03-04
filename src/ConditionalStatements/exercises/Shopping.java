@@ -13,10 +13,10 @@ public class Shopping {
         int numCPUs = Integer.parseInt(scanner.nextLine());
         int numRAMs = Integer.parseInt(scanner.nextLine());
 
-        double priceCPU = priceGPU*numGPUs*0.35;
-        double priceRAMs = priceGPU*numGPUs*0.1;
+        double priceCPU = priceGPU * numGPUs * 0.35;
+        double priceRAMs = priceGPU * numGPUs * 0.1;
 
-        double totalCost = numGPUs*priceGPU + numCPUs*priceCPU + numRAMs*priceRAMs;
+        double totalCost = numGPUs * priceGPU + numCPUs * priceCPU + numRAMs * priceRAMs;
 
         if (numGPUs > numCPUs) {
             totalCost = totalCost * 0.85;

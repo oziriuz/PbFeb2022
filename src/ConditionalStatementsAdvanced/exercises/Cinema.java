@@ -14,17 +14,17 @@ public class Cinema {
         int rows = Integer.parseInt(scanner.nextLine());
         int columns = Integer.parseInt(scanner.nextLine());
 
-        int places = rows*columns;
+        int places = rows * columns;
         double singlePrice = 0;
 
         switch (type) {
-            case "Premiere" :
+            case "Premiere":
                 singlePrice = 12.00;
                 break;
-            case "Normal" :
+            case "Normal":
                 singlePrice = 7.50;
                 break;
-            case "Discount" :
+            case "Discount":
                 singlePrice = 5.00;
                 break;
             default:

@@ -26,9 +26,8 @@ public class PetShop {
             } else {
                 System.out.println("Cat food packs must be between 0 and 100!");
             }
+        } else {
+            System.out.println("Dog food packs must be between 0 and 100!");
         }
-            else {
-                System.out.println("Dog food packs must be between 0 and 100!");
-            }
     }
 }

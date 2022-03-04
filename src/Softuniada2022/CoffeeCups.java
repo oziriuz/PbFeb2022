@@ -10,7 +10,7 @@ public class CoffeeCups {
         int n = Integer.parseInt(scanner.nextLine());
         String textCup = scanner.nextLine();
 
-        StringBuilder beginSpace = new StringBuilder("");
+        StringBuilder beginSpace = new StringBuilder();
         for (int i = 0; i < n; i++) {
             beginSpace.append(" ");
         }
@@ -86,7 +86,7 @@ public class CoffeeCups {
 
             cup.append("/");
             System.out.println(cup);
-            cup = new StringBuilder("");
+            cup = new StringBuilder();
             topPartLength--;
         }
 

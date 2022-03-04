@@ -31,12 +31,12 @@ public class HousePainting {
 
         areaBack = x_HouseHeight * x_HouseHeight;
         areaFront = areaBack - AREA_DOOR;
-        areaTwoSides = 2 * (x_HouseHeight*y_HouseSideLength - AREA_WINDOW);
+        areaTwoSides = 2 * (x_HouseHeight * y_HouseSideLength - AREA_WINDOW);
         areaGreen = areaBack + areaFront + areaTwoSides;
         greenPaint = areaGreen / EXPENSE_GREEN_PAINT;
 
         areaTrianglesRoof = 2 * (x_HouseHeight * h_RoofHeight / 2);
-        areaRectanglesRoof = 2 * ( x_HouseHeight * y_HouseSideLength);
+        areaRectanglesRoof = 2 * (x_HouseHeight * y_HouseSideLength);
         areaRed = areaTrianglesRoof + areaRectanglesRoof;
         redPaint = areaRed / EXPENSE_RED_PAINT;
 

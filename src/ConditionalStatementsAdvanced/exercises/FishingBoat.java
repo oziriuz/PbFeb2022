@@ -35,7 +35,7 @@ public class FishingBoat {
             totalCost = totalCost * 0.75;
         }
 
-        if (people % 2 == 0 && !season.equals("Autumn")){
+        if (people % 2 == 0 && !season.equals("Autumn")) {
             totalCost = totalCost * 0.95;
         }
 

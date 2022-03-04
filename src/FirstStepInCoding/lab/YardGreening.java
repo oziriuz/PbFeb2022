@@ -19,8 +19,7 @@ public class YardGreening {
             totalPriceWithDiscount = totalPrice - discount;
             System.out.println("The final price is: " + totalPriceWithDiscount + " lv.");
             System.out.println("The discount is: " + discount + " lv.");
-        }
-        else {
+        } else {
             System.out.println("Square meters must be between 0 and 10000!");
         }
     }

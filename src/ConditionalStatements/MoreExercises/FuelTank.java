@@ -9,7 +9,7 @@ public class FuelTank {
         String fuelType = scanner.nextLine();
         int fuelLitres = Integer.parseInt(scanner.nextLine());
 
-        if(!fuelType.equals("Diesel") && !fuelType.equals("Gasoline") && !fuelType.equals("Gas")) {
+        if (!fuelType.equals("Diesel") && !fuelType.equals("Gasoline") && !fuelType.equals("Gas")) {
             System.out.println("Invalid fuel!");
             return;
         }

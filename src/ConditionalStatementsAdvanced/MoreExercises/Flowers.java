@@ -30,7 +30,7 @@ public class Flowers {
             price = price * 1.15; // 15 % for holidays
         }
 
-        if (season.equals("Spring") && numT > 7){
+        if (season.equals("Spring") && numT > 7) {
             price = 0.95 * price; //discount
         }
         if (season.equals("Winter") && numR >= 10) {

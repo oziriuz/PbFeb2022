@@ -38,8 +38,8 @@ public class EasterEggs {
                 }
             }
         }
-        for (int rMatrix = 0; rMatrix < rows; rMatrix++){
-            for (int cMatrix = 0; cMatrix < columns; cMatrix++){
+        for (int rMatrix = 0; rMatrix < rows; rMatrix++) {
+            for (int cMatrix = 0; cMatrix < columns; cMatrix++) {
                 System.out.print(eggs[rMatrix][cMatrix]);
             }
             System.out.println();

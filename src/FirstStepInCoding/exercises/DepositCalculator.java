@@ -15,7 +15,7 @@ public class DepositCalculator {
         depositMonths = Integer.parseInt(scanner.nextLine());
         yearInterest = Double.parseDouble(scanner.nextLine());
 
-        result = depositSum + depositMonths * ((depositSum * (yearInterest/100))/12);
+        result = depositSum + depositMonths * ((depositSum * (yearInterest / 100)) / 12);
 
         System.out.println(result);
     }

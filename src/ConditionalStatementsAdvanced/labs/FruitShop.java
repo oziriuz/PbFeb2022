@@ -18,34 +18,34 @@ public class FruitShop {
             case "Wednesday":
             case "Thursday":
             case "Friday":
-                switch (product){
-                    case "banana" :
+                switch (product) {
+                    case "banana":
                         price = 2.50;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
-                    case "apple" :
+                    case "apple":
                         price = 1.20;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
-                    case "orange" :
+                    case "orange":
                         price = 0.85;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
-                    case "grapefruit" :
+                    case "grapefruit":
                         price = 1.45;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
-                    case "kiwi" :
+                    case "kiwi":
                         price = 2.70;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
-                    case "pineapple" :
+                    case "pineapple":
                         price = 5.50;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
-                    case "grapes" :
+                    case "grapes":
                         price = 3.85;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
                     default:
                         System.out.println("error");
@@ -54,34 +54,34 @@ public class FruitShop {
                 break;
             case "Saturday":
             case "Sunday":
-                switch (product){
-                    case "banana" :
+                switch (product) {
+                    case "banana":
                         price = 2.70;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
-                    case "apple" :
+                    case "apple":
                         price = 1.25;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
-                    case "orange" :
+                    case "orange":
                         price = 0.90;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
-                    case "grapefruit" :
+                    case "grapefruit":
                         price = 1.60;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
-                    case "kiwi" :
+                    case "kiwi":
                         price = 3.00;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
-                    case "pineapple" :
+                    case "pineapple":
                         price = 5.60;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
-                    case "grapes" :
+                    case "grapes":
                         price = 4.20;
-                        System.out.printf("%.2f", price*quantity);
+                        System.out.printf("%.2f", price * quantity);
                         break;
                     default:
                         System.out.println("error");

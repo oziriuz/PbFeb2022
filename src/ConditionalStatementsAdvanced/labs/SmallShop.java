@@ -76,7 +76,7 @@ public class SmallShop {
             }
         }
 
-        double result = price*quantity;
+        double result = price * quantity;
         System.out.println(result);
     }
 }

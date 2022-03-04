@@ -30,7 +30,7 @@ public class EasterSurprise {
         int initialR = Integer.parseInt(searchCoord.get(0));
         int initialC = Integer.parseInt(searchCoord.get(1));
 
-        if (initialR < 0 || initialR >= r || initialC < 0 || initialC >= c){
+        if (initialR < 0 || initialR >= r || initialC < 0 || initialC >= c) {
             return;
         }
 
