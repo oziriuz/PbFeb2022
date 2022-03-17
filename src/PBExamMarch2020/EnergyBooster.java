@@ -6,17 +6,9 @@ public class EnergyBooster {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-
-        //2.	Размерът на сета - текст с възможности: "small" или "big"
-        //3.	Брой на поръчаните сетове - цяло число в интервала [1 … 10000]
-
         String fruit = scanner.nextLine();
         String setSize = scanner.nextLine();
         int numOfSets = Integer.parseInt(scanner.nextLine());
-
-        //	                Диня 	        Манго	        Ананас	        Малина
-        //2 броя (small)	56 лв./бр.	    36.66 лв./бр.	42.10 лв./бр.	20 лв./бр.
-        //5 броя (big)	    28.70 лв./бр.	19.60 лв./бр.	24.80 лв./бр.	15.20 лв./бр.
 
         double setPrice = 0;
 
