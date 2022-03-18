@@ -8,7 +8,7 @@ public class ChangeBureau {
 
         int bitcoins = Integer.parseInt(scanner.nextLine());
         double uans = Double.parseDouble(scanner.nextLine());
-        double perCom = Double.parseDouble(scanner.nextLine());;
+        double perCom = Double.parseDouble(scanner.nextLine());
 
         double sumInBGN = bitcoins * 1168 + (uans * 0.15) * 1.76;
         double sumInEuro = sumInBGN / 1.95;

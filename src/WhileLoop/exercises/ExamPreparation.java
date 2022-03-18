@@ -10,7 +10,7 @@ public class ExamPreparation {
         int badScores = 0;
         int sumProblems = 0;
         String problemName = scanner.nextLine();
-        int problemScore = 0;
+        int problemScore;
         int sumScrores = 0;
         String lastProblem = "";
 

@@ -10,7 +10,7 @@ public class Travelling {
 
         while (!command.equals("End")) {
             double target = Double.parseDouble(scanner.nextLine());
-            double money = 0;
+            double money;
             double sumMoney = 0;
             while (sumMoney < target) {
                 money = Double.parseDouble(scanner.nextLine());

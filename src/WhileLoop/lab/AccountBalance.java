@@ -7,7 +7,7 @@ public class AccountBalance {
         Scanner scanner = new Scanner(System.in);
 
         String input = scanner.nextLine();
-        double money = 0;
+        double money;
         double sum = 0;
 
         while (!input.equals("NoMoreMoney")){

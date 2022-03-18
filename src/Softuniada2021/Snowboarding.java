@@ -32,7 +32,7 @@ public class Snowboarding {
                 competitor.goThisTrack(track);
             }
         }
-        Collections.sort(competitor.tracksPassed, String.CASE_INSENSITIVE_ORDER);
+        competitor.tracksPassed.sort(String.CASE_INSENSITIVE_ORDER);
 
         StringBuilder resultTracks = new StringBuilder();
         for (int i = 0; i < competitor.tracksPassed.size(); i++) {
@@ -45,9 +45,9 @@ public class Snowboarding {
     }
 
     public static class Track {
-        String name;
-        int stamina;
-        int points;
+        final String name;
+        final int stamina;
+        final int points;
 
         public Track(String name, int stamina, int points) {
             this.name = name;
@@ -65,11 +65,11 @@ public class Snowboarding {
     }
 
     public static class Player {
-        int staminaInitial;
+        final int staminaInitial;
         int staminaLeft;
         int points;
 
-        List<String> tracksPassed = new ArrayList<>();
+        final List<String> tracksPassed = new ArrayList<>();
 
         public Player(int staminaInitial) {
             this.staminaInitial = staminaInitial;

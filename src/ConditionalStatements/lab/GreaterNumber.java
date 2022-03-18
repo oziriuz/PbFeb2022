@@ -9,10 +9,6 @@ public class GreaterNumber {
         int numberA = Integer.parseInt(scanner.nextLine());
         int numberB = Integer.parseInt(scanner.nextLine());
 
-        if (numberA >= numberB) {
-            System.out.println(numberA);
-        } else {
-            System.out.println(numberB);
-        }
+        System.out.println(Math.max(numberA, numberB));
     }
 }

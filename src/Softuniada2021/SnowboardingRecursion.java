@@ -51,20 +51,10 @@ public class SnowboardingRecursion {
 
         //trackList.sort(Comparator.comparingInt(Track::getStamina).thenComparing(Track::getPoints));
         trackList.sort(Comparator.comparingDouble(Track::getWorth));
-//        for(int i = 0; i < tempNames.size(); i++){
-//            System.out.println(trackList.get(i).name + "-" + trackList.get(i).getWorth() + "-" + trackList.get(i).points);
-//        }
 
         Player competitor = new Player(playerStamina);
 
         int result = getTrackFromList(trackList, trackList.size() - 1, competitor.staminaLeft, competitor, competitor.tracksPassed);
-
-//        for (Track track : trackList) {
-//            if (competitor.canGoThisTrack(track)) {
-//                result = getTrackFromList(trackList, trackList.size() - 1, competitor.staminaLeft, competitor);
-//            }
-//        }
-        //System.out.println(result);
 
         competitor.tracksPassed.sort(String.CASE_INSENSITIVE_ORDER);
         StringBuilder resultTracks = new StringBuilder();
@@ -72,15 +62,13 @@ public class SnowboardingRecursion {
             resultTracks.append(competitor.tracksPassed.get(i)).append(" ");
         }
         System.out.println(resultTracks.toString().trim());
-//        System.out.println(competitor.points);
-//        System.out.println(competitor.staminaLeft);
         System.out.println(result);
     }
 
     public static class Track {
-        String name;
-        int stamina;
-        int points;
+        final String name;
+        final int stamina;
+        final int points;
         public Track(String name, int stamina, int points) {
             this.name = name;
             this.stamina = stamina;
@@ -102,11 +90,11 @@ public class SnowboardingRecursion {
     }
 
     public static class Player {
-        int staminaInitial;
-        int staminaLeft;
+        final int staminaInitial;
+        final int staminaLeft;
         int points;
 
-        List<String> tracksPassed = new ArrayList<>();
+        final List<String> tracksPassed = new ArrayList<>();
 
         public Player(int staminaInitial) {
             this.staminaInitial = staminaInitial;

@@ -13,7 +13,7 @@ public class MatchTickets {
         double priceVIP = 499.99;
         double priceNormal = 249.99;
 
-        double transport = 0;
+        double transport;
         if (people < 5) {
             transport = 0.75 * budget;
         } else if (people < 10) {

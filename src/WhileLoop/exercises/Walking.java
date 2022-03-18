@@ -8,7 +8,7 @@ public class Walking {
 
         String input = scanner.nextLine();
         int sumSteps = 0;
-        int steps = 0;
+        int steps;
         int targetSteps = 10_000;
         while (!input.equals("Going home")){
             steps = Integer.parseInt(input);

@@ -8,7 +8,7 @@ public class Balls {
 
         int numOfBalls = Integer.parseInt(scanner.nextLine());
 
-        String color = null;
+        String color;
         int points = 0;
         int numOfRed = 0;
         int numOfOrange = 0;

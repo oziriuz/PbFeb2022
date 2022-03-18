@@ -79,8 +79,6 @@ public class YachtVisited {
                 break;
             }
         }
-        //long c1 = System.nanoTime()-cur;
-        //System.out.println("TIME CONSUMED:" +c1);
         System.out.println(result);
     }
 }

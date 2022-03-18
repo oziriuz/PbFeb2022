@@ -23,17 +23,17 @@ public class EasterBonuses {
                 break;
             tasks.addAll(Arrays.asList(scanner.nextLine().split(", ")));
             int temp = 1;
-            for (int i = 0; i < tasks.size(); i++) {
-                if (tasks.get(i).equals("0") && !hasZero) {
+            for (String s : tasks) {
+                if (s.equals("0") && !hasZero) {
                     hasZero = true;
                 } else {
-                    temp = temp * Integer.parseInt(tasks.get(i));
+                    temp = temp * Integer.parseInt(s);
                 }
             }
             int tempSum = 0;
             if (!hasZero) {
-                for (int i = 0; i < tasks.size(); i++) {
-                    tempSum = tempSum + temp / Integer.parseInt(tasks.get(i));
+                for (String task : tasks) {
+                    tempSum = tempSum + temp / Integer.parseInt(task);
                 }
             } else {
                 tempSum = temp;

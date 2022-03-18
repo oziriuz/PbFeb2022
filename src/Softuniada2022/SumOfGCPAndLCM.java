@@ -10,13 +10,7 @@ public class SumOfGCPAndLCM {
         int m = Integer.parseInt(scanner.nextLine());
 
         int gcp = 1;
-        int min;
-
-        if (n <= m) {
-            min = n;
-        } else {
-            min = m;
-        }
+        int min = Math.min(n, m);
 
         for (int i = min; i > 1; i--) {
             if (n % i == 0 && m % i == 0) {
@@ -27,7 +21,7 @@ public class SumOfGCPAndLCM {
 
         int max;
         int step;
-        int lcm = 0;
+        int lcm;
 
         if (n > m) {
             max = step = n;

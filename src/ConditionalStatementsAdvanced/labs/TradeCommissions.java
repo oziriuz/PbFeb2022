@@ -9,7 +9,7 @@ public class TradeCommissions {
         String town = scanner.nextLine();
         double sales = Double.parseDouble(scanner.nextLine());
 
-        double commission = 0.0;
+        double commission;
 
         //Град	0 ≤ s ≤ 500	500 < s ≤ 1 000	1 000 < s ≤ 10 000	s > 10 000
         //Sofia	    5%	            7%	            8%	        12%

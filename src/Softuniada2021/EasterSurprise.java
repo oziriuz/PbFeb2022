@@ -9,14 +9,12 @@ public class EasterSurprise {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        List<String> coord = new ArrayList<>();
-        coord.addAll(Arrays.asList(scanner.nextLine().split(" ")));
+        List<String> coord = new ArrayList<>(Arrays.asList(scanner.nextLine().split(" ")));
         int r = Integer.parseInt(coord.get(0));
         int c = Integer.parseInt(coord.get(1));
         String[][] matrix = new String[r][c];
 
         List<String> rowChar = new ArrayList<>();
-        List<String> searchCoord = new ArrayList<>();
 
         for (int i = 0; i < r; i++) {
             rowChar.addAll(Arrays.asList(scanner.nextLine().split(" ")));
@@ -26,7 +24,7 @@ public class EasterSurprise {
             rowChar.clear();
         }
         String symbolFound = scanner.nextLine();
-        searchCoord.addAll(Arrays.asList(scanner.nextLine().split(" ")));
+        List<String> searchCoord = new ArrayList<>(Arrays.asList(scanner.nextLine().split(" ")));
         int initialR = Integer.parseInt(searchCoord.get(0));
         int initialC = Integer.parseInt(searchCoord.get(1));
 

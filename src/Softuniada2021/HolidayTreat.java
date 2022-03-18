@@ -7,14 +7,13 @@ import java.util.Scanner;
 import java.util.stream.IntStream;
 
 public class HolidayTreat {
-    static int[][] printResult = new int[15][15];
+    static final int[][] printResult = new int[15][15];
     static int counter = 0;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        List<String> inputSweets = new ArrayList<>();
-        inputSweets.addAll(Arrays.asList(scanner.nextLine().split(", ")));
+        List<String> inputSweets = new ArrayList<>(Arrays.asList(scanner.nextLine().split(", ")));
         int n = inputSweets.size();
         int k = Integer.parseInt(scanner.nextLine());
         int[] sweets = new int[n];
